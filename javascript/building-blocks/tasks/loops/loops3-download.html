@@ -41,7 +41,14 @@
 
 
     // Add your code here
-
+    para.textContent="";
+    for(let j=500;j>1;j--){
+      if(isPrime(j)){
+        para.textContent+=j+" ";
+      }
+      
+    }
+    
 
     // Don't edit the code below here!
     let section = document.querySelector('section');
