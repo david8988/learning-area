@@ -11,6 +11,43 @@
   </body>
 
     <script>
+      const person={
+        name: {
+          first:"Bob",
+          last:"Smith"
+        },
+        age: 32,
+        gender: 'male',
+        interests: ['music', 'skiing'],
+        bio: function() {
+          alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+        },
+        greeting: function() {
+          alert('Hi! I\'m ' + this.name.first + '.');
+        }
+      };
+
+      person.age=45;
+      person["name"].last="aniam";
+      person.eyes="black";
+      person.farewell=function(){alert("bye")};
+
+      let myDataName = "height";
+      let myDataValue = "1.75cm";
+
+      person[myDataName] = myDataValue;
+
+      const person1 = {
+        name: 'Chris',
+        greeting: function() {
+         alert('Hi! I\'m ' + this.name + '.');
+       }
+
+      
+
+      }
+
+      const myNotification = new Notification('Hello!');
 
     </script>
 </html>
